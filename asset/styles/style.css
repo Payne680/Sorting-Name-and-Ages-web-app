@@ -4,19 +4,24 @@
 
 body {
   font-family: sans-serif;
-  background-color: #999;
+  background-color: rgb(107, 64, 64);
+  text-align: center;
+}
+
+button {
+    background-color: red;
 }
 
 .project {
-  background-color: burlywood;
-  width: 95w;
+  background-color: rgb(31, 29, 28);
+  width: 60%;
   height: fit-content;
-  margin: 4rem auto;
+  margin: 2rem auto;
   padding: 10px;
 }
 
 .part1 {
-  background-color: #555;
+  background-color: rgb(72, 59, 59);
   display: flex;
   justify-content: space-between;
   height: fit-content;
@@ -30,10 +35,12 @@ body {
 }
 
 .part1 button {
-    background-color: orange;
+    background-color: rgb(168, 132, 66);
     border: none;
     height: 30px;
     align-items: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .user {
@@ -43,10 +50,22 @@ body {
     align-items: center;
     height: fit-content;
     min-height: 70px;
-    gap: 30rem;
+    gap: 12rem;
+    text-align: initial;
 }
 
 .details {
     display: flex;
     gap: 15rem;
+}
+
+@media only screen and (max-width: 425px){
+  .project {
+    width: auto;
+  }
+  .user {
+    display: block;
+    gap: 2rem;
+    max-width: 100%;
+  }
 }
